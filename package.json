@@ -4,8 +4,8 @@
     "description": "",
     "main": "index.ts",
     "scripts": {
-        "start": "tsnd --respawn --clear src/index.ts",
-        "build": "next build",
+        "start": "node build",
+        "build": "tsc -p .",
         "dev": "tsnd --respawn --clear src/index.ts"
     },
     "author": "leephan",
@@ -21,6 +21,7 @@
         "node-cron": "^3.0.0",
         "node-html-parser": "^5.3.3",
         "react": "^18.2.0",
+        "react-dom": "^18.2.0",
         "redis": "^4.1.0",
         "typescript": "4.2.4",
         "uuid": "^8.3.2"
